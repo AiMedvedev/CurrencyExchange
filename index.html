@@ -12,18 +12,22 @@
     <div class="wrapper">
         <div class="container">
             <select name="currency-select" id="currency-select">
-                <option value="dollar">US Dollar</option>
+                <option value="dollar" selected>US Dollar</option>
                 <option value="euro">Euro</option>
             </select>
             <div class="main-wrapper">
                 <div class="main-left">
                     <input type="text" class="input" id="input-left">
-                    <span>Туту будет текст</span> 
+                    <span id="text-left">Доллар США (USD)</span> 
                 </div>
                 <div class="main-right">
-                    <input type="text" class="input" id="input-right">
-                    <span>Тут будет текст 2</span>
+                    <input type="text" disabled class="result" id="result">
+                    <span id="text-right">Российский рубль (RUB)</span>
                 </div>
+            </div>
+            <div class="currency-flip">
+                <input class="currency-order" type="checkbox" role="switch" id="currency-order">
+                <label class="currency-order-label" for="currency-order">Пересчитать в валюту</label>
             </div>
             <button class="calc">Рассчитать</button>
         </div>

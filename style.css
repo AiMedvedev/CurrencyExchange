@@ -1,0 +1,40 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 700px;
+    
+}
+
+.container {
+    background-color: aqua;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+select {
+    width: fit-content;
+    align-self: flex-start;
+    margin-bottom: 25px;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.currency-flip {
+    margin-bottom: 25px;
+}
+
+.calc {
+    align-self: center;
+}
