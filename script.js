@@ -11,12 +11,15 @@ const textRight = document.getElementById('text-right');
 let currency;
 let amount;
 let result;
-//let currencyId;
 let isChecked = false;
 let text1 = 'Российский рубль (RUB)';
 let text2 = 'Доллар США (USD)';
 let text3 = 'ЕВРО (EUR)';
 
+
+input.addEventListener('input', (e) => {
+    e.target.value = e.target.value.replace(/[^\d\.]/g, "").replace(/\./, "x").replace(/\./g, "").replace(/x/, ".");
+});
 
 currencySelect.addEventListener('change', () => {
     currency = currencySelect.value === 'dollar' ? 'USD' : 'EUR';
